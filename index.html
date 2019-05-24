@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Authorship Rocks!</title>
+  <link href="/assets/semantic.min.css" rel="stylesheet">
+  <link href="/assets/style.css" rel="stylesheet">
+  <link href="/assets/test.css" rel="stylesheet">
+
+  <script src="/assets/jquery-1.11.3.min.js"></script>
+  <script src="/assets/semantic.min.js"></script>
+
+  <link rel="redirect_uri" href="https://indielogin.com/redirect/indieauth">
+</head>
+<body>
+
+
+
+<div class="single-column">
+  <div id="header-graphic"><img src="/assets/authorship-rocks.png"></div>
+
+  <section class="content">
+    <h3>About this site</h3>
+    <p><b><i>Authorship Rocks!</i></b> is a validator to help you test your <a href="https://indieweb.org/authorship">Authorship Discovery</a> implementation.</p>
+  </section>
+
+  <section class="content small">
+    <p>This code is <a href="https://github.com/indieweb/authorship.rocks">open source</a>. Feel free to <a href="https://github.com/indieweb/authorship.rocks/issues">file an issue</a> if you notice any errors.</p>
+  </section>
+
+  <section class="content">
+    <h3>Authorship Discovery</h3>
+
+    <p>
+    The test posts below advertise their authors in a variety of ways,
+    to help you test your <a href="https://indieweb.org/authorship">Authorship Discovery</a>
+    implementation.
+    </p>
+    <p>
+    You can point your discovery algorithm at each of the posts, and try to
+    discover the author that is indicated on the page.
+    </p>
+
+    <ul>
+      <li>
+        <a href="/test/1">Discovery Test #1</a>
+        -
+        Entry with p-author
+      </li>
+      <li>
+        <a href="/test/2">Discovery Test #2</a>
+        -
+        Entry with h-card
+      </li>
+      <li>
+        <a href="/test/3">Discovery Test #3</a>
+        -
+        Entry with separate h-card and rel=author
+      </li>
+      <li>
+        <a href="/test/4">Discovery Test #4</a>
+        -
+        Entry with rel=author to an h-card with rel=me
+      </li>
+    </ul>
+
+    <p>
+    If you want a quick bit of text to copy+paste into a script, you can use
+    the JSON below, which link to all the tests and have the answers associated with them.
+    </p>
+
+    <h4>JSON</h4>
+    <textarea style="width:100%;font-family:monospace" rows="6">{
+  "https://authorship.rocks/test/1": {
+    "name": "William Shakespeare",
+    "url": null,
+    "photo": null
+  },
+  "https://authorship.rocks/test/2": {
+    "name": "Homer",
+    "url": "https://en.wikiquote.org/wiki/Homer",
+    "photo": "https://authorship.rocks/images/homer.jpg"
+  },
+  "https://authorship.rocks/test/3": {
+    "name": "Patañjali",
+    "url": "https://authorship.rocks/test/3/about-patanjali",
+    "photo": null
+  },
+  "https://authorship.rocks/test/4": {
+    "name": "Virginia Woolf",
+    "url": "https://authorship.rocks/test/4/about-virginia-woolf",
+    "photo": "https://authorship.rocks/images/virginia-woolf.jpg"
+  }
+}</textarea>
+  </section>
+
+  <section class="content small">
+    <p>This code is <a href="https://github.com/indieweb/authorship.rocks">open source</a>. Feel free to <a href="https://github.com/indieweb/authorship.rocks/issues">file an issue</a> if you notice any errors.</p>
+  </section>
+
+</div>
+</body>
+</html>
+

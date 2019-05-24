@@ -1,0 +1,339 @@
+.post-container {
+  max-width: 600px;
+  margin: 20px auto;
+
+  font-size: 14pt;
+  line-height: 17pt;
+}
+@media(max-width: 616px) {
+  .post-container {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+.post-container .post-main {
+  display: flex;
+  flex-direction: row;  
+
+  border-radius: .28571429rem;
+  border: 1px #abcce9 solid;
+
+  background: #fff;
+  padding: 12px;
+}
+.post-container .post-main .meta {
+  font-size: 10pt;
+}
+.post-container .post-main .meta a {
+  color: #777;
+}
+.post-container .post-main .meta a:hover {
+  color: #999;
+}
+
+@media(max-width: 400px) {
+  .post-container .post-main {
+    display: block;
+  }
+  .post-container .left {
+    float: left;
+  }
+}
+
+.post-container .post-main.has-responses {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 0;
+}
+
+.post-container .post-responses {
+  background: #f2f7fc;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px #abcce9 solid;
+  border-top: 0;
+}
+
+.post-container .left {
+  flex: 0 auto; /* this needs to be "0 auto" for Safari, but works as "0" for everything else */
+  padding-right: 12px;
+}
+.post-container .right {
+  flex: 1;
+}
+.post-container img {
+  background: white;
+  border: 1px #abcce9 solid;
+  border-radius: .28571429rem;
+}
+
+
+
+/* name of the test */
+.post-container h1 {
+  margin: 0;
+  font-size: 16pt;
+  font-weight: bold;
+}
+/* name if a comment has the name, or if the comment text includes h tags */
+.post-container .post-responses h1,
+.post-container .post-responses h2,
+.post-container .post-responses h3 {
+  font-size: 15pt;
+  font-weight: bold;
+}
+.post-container .post-responses h4,
+.post-container .post-responses h5,
+.post-container .post-responses h6 {
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+
+
+/* facepile */
+
+.post-container .post-responses ul.facepile {
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  list-style-type: none;
+}
+
+.post-responses ul.facepile > li {
+  float: left;
+}
+
+.post-responses .facepile-type-icon {
+  font-size: 2em;
+  padding-top: 16px;
+  padding-left: 4px;
+  float: left;
+}
+
+/* reacji */
+
+.post-responses .responses-row.reacji {
+  margin-bottom: 8px;
+}
+
+.post-responses ul.reacji {
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  margin-left: 12px;
+  list-style-type: none;
+}
+.post-responses ul.reacji li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px #abcce9 solid;
+  border-radius: 4px;
+  padding: 0 2px;
+  margin-right: 6px;
+  float: left;
+}
+.post-responses ul.reacji li .emojichar {
+  flex: 0;
+  font-size: 2em;
+  line-height: 1.2em;
+  cursor: pointer;
+}
+.post-responses ul.reacji li .count {
+  flex: 0;
+  font-size: 0.8em;
+  color: #666;
+  margin-left: 6px;
+  margin-right: 4px;
+}
+.post-responses ul.reacji-links {
+  margin: 0;
+  padding: 0;
+  max-width: 300px;
+  overflow: scroll;
+}
+.post-responses ul.reacji-links li {
+  border: 0;
+}
+
+/* comments */
+
+.post-container .responses-row {
+  border-top: 1px #abcce9 solid;  
+}
+
+.post-responses .responses-row.empty {
+  display: none;
+}
+
+.post-responses .responses-row .help-text {
+  font-size: 0.7em; 
+  color: #666;  
+}
+
+.post-responses .responses-row .help-text code {
+  word-wrap: nowrap;
+}
+
+.post-container .post-responses ul.comments {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.post-responses ul.comments > li {
+  padding: 0;
+  margin: 0;
+  padding-top: 6px;
+  padding-right: 12px;
+  border-top: 1px #abcce9 solid;
+}
+.post-responses ul.comments > li .comment {
+  margin-left: 66px;
+  margin-bottom: 6px;
+}
+.post-responses ul.comments > li .comment .author img {
+  margin-left: -54px;
+  float: left;
+}
+.post-responses ul.comments > li .comment .author {
+  font-size: 0.8em;
+  margin-bottom: 6px;
+}
+.post-responses ul.comments > li .comment .author-url {
+  color: #888;
+  font-weight: normal;
+}
+.post-responses ul.comments > li .comment .plaintext {
+  white-space: pre-line;
+}
+.post-responses ul.comments > li .comment .comment-content .missing {
+  color: #888;
+}
+.post-responses ul.comments > li .comment .meta {
+  color: #777;
+  margin-top: 8px;
+  font-size: 0.65em;
+  line-height: 1.1em;
+}
+.post-responses ul.comments > li .comment .meta a {
+  color: #777;
+}
+.post-responses ul.comments > li .comment .meta a:hover, .post-responses ul.comments > li .comment .author a:hover {
+  text-decoration: underline;
+}
+.post-responses ul.comments > li .comment blockquote {
+  border-left: 4px #bbb solid;
+  margin-left: 0;
+  padding-left: 12px;
+}
+.post-responses ul.comments > li .comment .comment-content img {
+  max-width: 100%;
+}
+
+.post-footer {
+  padding-top: 20px;
+  font-size: 0.7em;
+  color: #777;
+  text-align: center;
+}
+
+.progress-checkmarks .label {
+  display: inline-block;
+}
+
+.progress-checkmarks .checkmark {
+  border: 1px #ffd65c solid;
+  border-radius: 2px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 0.8em;
+  vertical-align: bottom;
+  font-family: Checkbox;
+  font-size: 17px;
+}
+.progress-checkmarks .checkmark.checked:after {
+  content: '\e800';
+  position: relative;
+  bottom: 1px;
+}
+
+
+
+.test-runner {
+  border-radius: .28571429rem;
+  border: 1px #abcce9 solid;
+
+  background: #f9f9f9;
+  padding: 12px;
+}
+
+.test-runner ul {
+  padding: 0;
+  margin: 0;
+  padding-left: 1em;
+}
+
+.test-runner pre {
+  font-size: 12px;
+  margin-top: 2px;
+  border-radius: .28571429rem;
+  border: 1px #C7DFF5 solid;
+  background: #fff;
+  padding: 4px;
+}
+
+.test-runner .hidden {
+  display: none;
+}
+
+#progress .error .header {
+  font-weight: bold;
+  color: #CA0E0E;
+}
+
+#progress .success .header {
+  font-weight: bold;
+  color: #17B108;
+}
+
+#progress li.head {
+  list-style-type: none;
+}
+#progress li.head span {
+  font-weight: bold;  
+}
+#progress li.head a {
+  font-size: 0.8em;
+}
+
+#progress li .block {
+  display: block;
+}
+
+#progress .results .circular.label {
+  font-size: 0.6em;
+}
+#progress li {
+  margin-bottom: 8px;
+}
+
+/* ======= */
+.explanation {
+  margin-top: 30px;
+}
+
+.answer {
+  background: #e0f0ce;
+  padding: 0 .2em;
+  border-radius: .2em;
+}
+
+.footer-text {
+  font-size: .8em;
+  margin-top: .5em;
+  margin-right: .5em;
+  text-align: right;
+}
